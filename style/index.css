@@ -1,0 +1,34 @@
+.box {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f7f9fa;
+    border:1px solid #dae1e6;
+    width:350px; height:135px;
+    padding:16px 16px 12px;
+    margin:100px auto;
+}
+.box p {
+    font-size: 0.75rem;
+}
+.box h1 {
+    background-color: #19ce60;
+    text-align: center;
+    padding:15px 0;
+    margin:16px 0 10px;
+}
+.box h1 a {
+    color:#fff; 
+    font-weight: 700;
+    font-size:1.063rem;
+    display: block;
+}
+.box .bottom {}
+.box .bottom a {
+    float:left;
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
+.box .bottom a:nth-child(1) {}
+.box .bottom a:nth-child(2) {}
+.box .bottom a:nth-child(3) {
+    float:right; margin:0;
+}
