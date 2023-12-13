@@ -12,14 +12,15 @@
 .box h1 {
     background-color: #19ce60;
     text-align: center;
-    padding:15px 0;
     margin:16px 0 10px;
 }
 .box h1 a {
     color:#fff; 
-    font-weight: 700;
+    font-weight: 600;
     font-size:1.063rem;
     display: block;
+    width:100%;
+    padding:15px 0;
 }
 .box .bottom {}
 .box .bottom a {
