@@ -1,0 +1,97 @@
+body {background-color: #f5f6f7;}
+section {}
+section .container {}
+section .container #login_form {
+    width:460px; margin: 0 auto; 
+}
+section .container #login_form fieldset {}
+section .container #login_form fieldset .wbg {}
+section .container #login_form fieldset .wbg dt {
+    text-align: left; padding: 10px 0; 
+    font-size:0.875rem; font-weight: 600;
+}
+section .container #login_form fieldset .wbg dt em {font-size:0.875rem;}
+section .container #login_form fieldset .wbg .join_date {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+section .container #login_form fieldset .wbg #join_id {width:320px;}
+section .container #login_form fieldset .wbg #join_pw {width:430px;}
+section .container #login_form fieldset .wbg #join_pw_chk {width:430px;}
+section .container #login_form fieldset .wbg #join_name {width:430px;}
+section .container #login_form fieldset .wbg .join_date #join_year {
+    width:150px;
+    background-color: #fff;
+    border:1px solid #eee ;
+    height: 51px; text-align: left; padding: 10px;
+}
+section .container #login_form fieldset .wbg .join_date #join_month {
+    background-color: #fff;
+    border:1px solid #eee ;
+    height: 51px; text-align: left; padding: 10px;
+    width:150px;
+}
+section .container #login_form fieldset .wbg #join_day {
+    background-color: #fff;
+    border:1px solid #eee ;
+    height: 51px; text-align: left; padding: 10px;
+    width:150px;
+}
+section .container #login_form fieldset .wbg #join_gender {width:430px; }
+section .container #login_form fieldset .wbg #join_email {width:430px;}
+section .container #login_form fieldset .wbg > dd > #join_phone {width:430px;}
+section .container #login_form fieldset .wbg input {padding:5px 0;}
+section .container #login_form fieldset .wbg dd span {float: right;}
+section .container #login_form fieldset .wbg dd {
+    text-align: left; 
+    padding: 10px 10px;
+    background-color: #fff; 
+    border:1px solid #eee ;
+    margin-bottom: 10px;
+}
+/* dl2 */
+section .container #login_form fieldset dl {
+    position: relative; font-size:0.875rem;
+}
+section .container #login_form fieldset dl .join_phone_2 {
+    display: flex; margin: 10px 0;
+}
+section .container #login_form fieldset dl #join_phone_num {
+    width:73%; float: left;  padding:16px;
+    background-color: #fff; 
+    border:1px solid #eee ;
+}
+section .container #login_form fieldset dl #join_phone_btn {
+    background-color: #03c75a; position: absolute; right:0;
+    font-size: 0.75rem; color:#fff; 
+    height: 51px; width: 116px;
+    
+}
+section .container #login_form fieldset > dl > .phone_info_bg #join_phone_info {
+    background-color: #eee;
+    border:1px solid #aaa;
+    text-align: left; 
+    width:100%;  padding: 16px; 
+}
+section .container #login_form fieldset dl a {
+    background-color: #03c75a; display: block;
+    margin:10px auto; width:100%;  padding: 20px; 
+    color:#fff; font-weight: 600; font-size: 1.188rem;
+}
+/* 
+
+section .container #login_form fieldset .wbg dd #join_id {}
+section .container #login_form fieldset .wbg dd #join_pw {}
+section .container #login_form fieldset .wbg dd #join_pw_chk {}
+section .container #login_form fieldset .wbg dd #join_name {}
+section .container #login_form fieldset .wbg dd #join_year {}
+section .container #login_form fieldset .wbg dd #join_month {}
+section .container #login_form fieldset .wbg dd #join_month option {}
+section .container #login_form fieldset .wbg dd #join_day {}
+section .container #login_form fieldset .wbg dd #join_gender {}
+section .container #login_form fieldset .wbg dd #join_gender option {}
+section .container #login_form fieldset .wbg dd #join_phone {}
+section .container #login_form fieldset .wbg dd #join_phone option {}
+section .container #login_form fieldset .wbg dd #join_phone #join_phone_num {}
+section .container #login_form fieldset .wbg dd #join_phone #join_phone_btn {}
+section .container #login_form fieldset .wbg dd #join_phone #join_phone_info {}
+*/

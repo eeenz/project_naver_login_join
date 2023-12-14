@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAVER | login</title>
+    <title>NAVER | 로그인</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/reset.css">
@@ -16,14 +16,67 @@
         <h1><a href="./index.html"><img src="./images/Naver_Logotype.png" alt="메인화면으로 돌아가기"></a></h1>
         <form action="#" method="post" id="login_form">
             <fieldset>
-                <legend class="skip">로그인창</legend>
-                
+                <legend class="skip">가입화면</legend>
+                <dl class="wbg">
+                    <dt>아이디</dt>
+                    <dd><input type="text" name="join_id" id="join_id" ><span>@naver.com</span></dd>
+                    <dt>비밀번호</dt>
+                    <dd><input type="password" name="join_pw" id="join_pw" ></dd>
+                    <dt>비밀번호 재확인</dt>
+                    <dd><input type="password" name="join_pw_chk" id="join_pw_chk" ></dd>
+                    <dt>이름</dt>
+                    <dd><input type="text" name="join_name" id="join_name" ></dd>
+                    <dt>생년월일</dt>
+                    <div class="join_date">
+                        <input type="text" name="join_year" id="join_year" placeholder="년(4자)" >
+                        <select name="join_month" id="join_month" >
+                            <option value="월">월</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <input type="text" name="join_day" id="join_day" placeholder="일" >
+                    </div>
+                    <dt>성별</dt>
+                    <dd>
+                        <select name="join_gender" id="join_gender">
+                            <option value="male">성별</option>
+                            <option value="male">남</option>
+                            <option value="female">여</option>
+                        </select>
+                    </dd>
+                    <dt>본인 확인 이메일<em>(선택)</em></dt>
+                    <dd><input type="text" name="join_email" id="join_email" placeholder="선택입력" ></dd>
+                    <dt>휴대전화</dt>
+                    <dd>
+                        <select name="join_phone" id="join_phone">
+                            <option value="ko">대한민국 +82</option>
+                            <option value="hk">홍콩 +852</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd class="join_phone_2">
+                        <input type="text" name="join_phone_num" id="join_phone_num" placeholder="전화번호 입력" >
+                        <button type="button" id="join_phone_btn">인증번호 받기</button>
+                    </dd>
+                    <dd class="phone_info_bg">
+                        <input type="text" name="join_phone_info" id="join_phone_info" placeholder="인증번호 입력하세요">
+                    </dd>
+                    <a href="#">가입하기</a>
+                </dl>
             </fieldset>
         </form>
     </div>    
-    <main>
-        
-    </main>
     <footer>
         <div class="top">
             <a href="#">이용약관</a>
