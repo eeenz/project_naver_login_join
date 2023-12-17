@@ -6,29 +6,51 @@ main .contents {
     width:460px; margin: 0 auto;
 }
 main .contents form fieldset {}
-main .contents form fieldset .chk_agree {}
+main .contents form fieldset .chk_agree {position: relative;}
 main .contents form fieldset .chk_agree li {
     text-align: left;
 }
 main .contents form fieldset .chk_agree li .chk1 {
-    display: block;
+    display: inline-block;
     margin-bottom: 30px;
     font-weight: 600; font-size:0.875rem; text-decoration:underline;
     line-height: 1.4;
 }
-main .contents form fieldset .chk_agree li .chk1 #chk1 {}
+main .contents form fieldset .chk_agree li #chk1 {appearance:none;}
+main .contents form fieldset .chk_agree li #chk1 + label::before {
+    content:'\f058'; color: #ccc; font-size: 1.0rem; text-decoration:none;
+    margin-left: 3px;
+}
+main .contents form fieldset .chk_agree li #chk1:checked + label::before {
+    color:#08a600; 
+}
 main .contents form fieldset .chk_agree li .chk2 {font-weight:600;}
-main .contents form fieldset .chk_agree li .chk2 #chk2{}
-main .contents form fieldset .chk_agree li .chk2 em {
+main .contents form fieldset .chk_agree li #chk2 {appearance:none;}
+main .contents form fieldset .chk_agree li #chk2 + label::before {
+    content:'\f058'; color: #ccc;
+    margin-right: 4px;
+}
+main .contents form fieldset .chk_agree li #chk2:checked + label::before {
     color:#08a600;
 }
-main .contents form fieldset .chk_agree li .kid_btn {
+main .contents form fieldset .chk_agree li label em {
+    color:#08a600;
+}
+/* main .contents form fieldset .chk_agree li .kid_btn {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-content: center; height: 100%;
+} */
+main .contents form fieldset .chk_agree li .kid_btn {}
+main .contents form fieldset .chk_agree li .kid_btn #chk3 {appearance:none;}
+main .contents form fieldset .chk_agree li .kid_btn #chk3 + label::before {
+    content:'\f058'; color: #ccc;
+    margin-right: -1px;
+}
+main .contents form fieldset .chk_agree li .kid_btn #chk3:checked + label::before {
+    color:#08a600;
 }
 main .contents form fieldset .chk_agree li .kid_btn .chk3 {font-weight:600;}
-main .contents form fieldset .chk_agree li .kid_btn .chk3 #chk3 {}
 main .contents form fieldset .chk_agree li .chk3 em {
     color:#08a600;
 }
@@ -36,10 +58,16 @@ main .contents form fieldset .chk_agree .kid_btn a {
     padding: 7px 10px ; border:1px solid #08a600; 
     background-color: #fff; color: #08a600;
     font-size:0.75rem;
-    
+    position:absolute; right:0; top:232px;
+}
+main .contents form fieldset .chk_agree li #chk4 {appearance:none;}
+main .contents form fieldset .chk_agree li #chk4 + label::before {
+    content:'\f058'; color: #ccc;
+}
+main .contents form fieldset .chk_agree li #chk4:checked + label::before {
+    color:#08a600;
 }
 main .contents form fieldset .chk_agree li .chk4 {font-weight:600;}
-main .contents form fieldset .chk_agree li .chk4 #chk4 {}
 main .contents form fieldset .chk_agree li .chk4 span {
     color: #aaa;
 }
